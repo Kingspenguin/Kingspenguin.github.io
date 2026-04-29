@@ -468,6 +468,7 @@ h3 {
 
 .work-item.compact {
   grid-template-columns: 210px minmax(0, 1fr);
+  box-shadow: 0 8px 24px rgba(29, 49, 45, 0.045);
 }
 
 .work-media {
