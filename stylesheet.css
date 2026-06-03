@@ -667,10 +667,10 @@ h3 {
 .visitor-map {
   display: flex;
   justify-content: center;
-  max-width: 320px;
-  min-height: 80px;
+  max-width: 340px;
+  min-height: 112px;
   margin: 10px auto 0;
-  overflow: hidden;
+  overflow: visible;
   opacity: 0.85;
 }
 
