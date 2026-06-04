@@ -666,24 +666,25 @@ h3 {
 
 .visitor-stats {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 8px 16px;
   margin-top: 10px;
-  color: var(--muted);
-  font-size: var(--text-xs);
 }
 
-.visitor-stats span:not(:last-child)::after {
-  content: "/";
-  margin-left: 16px;
-  color: #b9c6c2;
-  font-weight: 400;
+.visitor-stats a {
+  display: inline-flex;
+  opacity: 0.82;
+  transition: opacity 0.16s ease;
 }
 
-.visitor-stats strong {
-  color: var(--accent-strong);
-  font-weight: 700;
+.visitor-stats a:hover,
+.visitor-stats a:focus {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.visitor-stats img {
+  width: 83px;
+  height: 20px;
 }
 
 @media (max-width: 820px) {
