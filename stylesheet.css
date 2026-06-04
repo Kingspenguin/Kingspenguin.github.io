@@ -664,14 +664,26 @@ h3 {
   font-size: var(--text-xs);
 }
 
-.visitor-map {
+.visitor-stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 340px;
-  min-height: 112px;
-  margin: 10px auto 0;
-  overflow: visible;
-  opacity: 0.85;
+  gap: 8px 16px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.visitor-stats span:not(:last-child)::after {
+  content: "/";
+  margin-left: 16px;
+  color: #b9c6c2;
+  font-weight: 400;
+}
+
+.visitor-stats strong {
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 @media (max-width: 820px) {
